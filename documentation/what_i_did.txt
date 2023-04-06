@@ -1,0 +1,16 @@
+12.05.22
+Miro Board Created : https://miro.com/app/board/uXjVO1oH4cg=/
+Wireframes with balsamiq : https://balsamiq.cloud/s5eodx6/ph2e1cn/r6B57
+Arc42 Documentation template
+
+Todo : Add requirements and start typing Documentation.
+
+22.05.22
+Documentation till 04
+Architecture chosen: Microservices
+
+TODO: Microservices research
+
+6.04.2023
+Choose layered architecture
+create sequence diagrams

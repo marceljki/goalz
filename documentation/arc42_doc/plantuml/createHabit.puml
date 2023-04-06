@@ -1,0 +1,8 @@
+@startuml
+User -> UI: Create habit
+UI -> Logic: createHabit(attr)
+UI -> UI: createHabitView(attr)
+Logic -> DataAccess: AddHabit(attr)
+DataAccess -> DB: Add Habit(attr)
+DB --> DataAccess: success
+@enduml

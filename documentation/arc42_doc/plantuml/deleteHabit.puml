@@ -1,0 +1,8 @@
+@startuml
+User -> UI: deleteHabit(ID)
+UI -> Logic: deleteHabit(ID)
+UI -> UI: deleteHabitView(ID)
+Logic -> DataAccess: deleteHabit(ID)
+DataAccess -> DB: Delete Habit
+DB --> DataAccess: success
+@enduml

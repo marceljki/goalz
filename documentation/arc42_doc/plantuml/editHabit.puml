@@ -1,0 +1,8 @@
+@startuml
+User -> UI: Edit habit
+UI -> Logic: editHabit(attr)
+UI -> UI: updateHabitView(attr)
+Logic -> DataAccess: editHabit(attr, table)
+DataAccess -> DB: Update Habit attr
+DB --> DataAccess: success
+@enduml

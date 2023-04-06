@@ -1,0 +1,4 @@
+@startuml
+User -> UI: startApp
+UI -> UI: openHomeView()
+@enduml

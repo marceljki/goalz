@@ -1,0 +1,8 @@
+@startuml
+UI -> Logic: updateViews()
+Logic -> DataAccess: getAllHabits()
+DataAccess -> DB: select * from Habits
+DB --> DataAccess: list Habits
+DataAccess --> Logic: list Habits
+Logic -> UI: updateViews(list Habits)
+@enduml

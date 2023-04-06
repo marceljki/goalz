@@ -1,0 +1,10 @@
+@startuml
+UI -> Logic: updateHabitView(ID)
+Logic -> DataAccess: getHabit(ID)
+DataAccess -> DB: getHabit(ID)
+DataAccess -> DB: getHabitProgress(ID)
+DB --> DataAccess: list Habits, progress
+DataAccess --> Logic: list Habits, progress
+Logic -> Logic: calculateStatistics()
+Logic -> UI: updateHabitView(list updates)
+@enduml
