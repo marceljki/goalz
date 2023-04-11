@@ -1,8 +1,11 @@
 @startuml
 User -> UI: Create habit
 UI -> Logic: createHabit(attr)
-UI -> UI: createHabitView(attr)
 Logic -> DataAccess: AddHabit(attr)
 DataAccess -> DB: Add Habit(attr)
 DB --> DataAccess: success
+DataAccess --> Logic: success
+Logic --> UI: success
+UI -> UI: createHabitView(attr)
+footer in case of a failure, the message will be saved locally
 @enduml
