@@ -23,7 +23,12 @@
         <activity
                 android:name="PresentationLayer.HabitView"
                 android:exported="true"
-                android:label="@string/title_activity_login">
+                android:label="HabitView">
+        </activity>
+        <activity
+                android:name="PresentationLayer.EditHabitView"
+                android:exported="true"
+                android:label="EditHabitView">
         </activity>
         <activity
                 android:name="PresentationLayer.MainAcitivity"
