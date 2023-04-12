@@ -1,0 +1,6 @@
+@startuml
+DB -> DB: start
+DataAccess -> DataAccess: start(DB_link)
+Logic -> Logic: start(DataAccess)
+UI -> UI: start(Logic)
+@enduml
