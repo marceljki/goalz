@@ -32,7 +32,7 @@ class MainAcitivity : AppCompatActivity(){
             val habit = parent.getItemAtPosition(position) as Habit
             val habitName = habit.name
             val intent = Intent(this, HabitView::class.java)
-            intent.putExtra(IntentNames.HABIT_NAME, habitName)
+            intent.putExtra(IntentNames.HABIT_NAME, habit)
             startActivity(intent)
     }
     }
