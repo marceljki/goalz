@@ -1,7 +1,7 @@
 package PresentationLayer
 
 import LogicLayer.LogicInterface
-import Utils.Habit
+import Utils.Habit.Habit
 
 class PController(var logic: LogicInterface) : PControllerInterface {
 

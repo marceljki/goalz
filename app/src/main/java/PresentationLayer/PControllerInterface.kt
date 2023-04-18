@@ -1,6 +1,6 @@
 package PresentationLayer
 
-import Utils.Habit
+import Utils.Habit.Habit
 
 interface PControllerInterface {
 

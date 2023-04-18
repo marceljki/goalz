@@ -1,7 +1,7 @@
 package Utils
 
-enum class Frequency(val frequency: Int) {
-    PER_DAY(1),
-    PER_WEEK(2),
-    PER_MONTH(3)
+enum class Frequency(val stringToPrint: String) {
+    PER_DAY("Per Day"),
+    PER_WEEK("Per Week"),
+    PER_MONTH("Per Month")
 }

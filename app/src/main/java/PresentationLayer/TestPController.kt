@@ -1,7 +1,7 @@
 package PresentationLayer
 
 import Utils.Frequency
-import Utils.Habit
+import Utils.Habit.Habit
 
 class TestPController() : PControllerInterface {
     override fun getAllHabits(userID: Int?): List<Habit> {

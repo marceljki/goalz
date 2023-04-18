@@ -1,4 +1,0 @@
-package PresentationLayer
-
-interface GoalzView {
-}

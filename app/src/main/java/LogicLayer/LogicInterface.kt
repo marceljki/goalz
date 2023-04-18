@@ -1,6 +1,6 @@
 package LogicLayer
 
-import Utils.Habit
+import Utils.Habit.Habit
 
 interface LogicInterface {
 

@@ -1,6 +1,6 @@
 package PresentationLayer
 
-import Utils.Habit
+import Utils.Habit.Habit
 import Utils.IntentNames
 import android.content.Intent
 import android.os.Bundle
@@ -30,9 +30,8 @@ class MainAcitivity : AppCompatActivity(){
         habitView.adapter = arrayAdapter
         habitView.setOnItemClickListener { parent, view, position, id ->
             val habit = parent.getItemAtPosition(position) as Habit
-            val habitName = habit.name
             val intent = Intent(this, HabitView::class.java)
-            intent.putExtra(IntentNames.HABIT_NAME, habit)
+            intent.putExtra(IntentNames.HABIT, habit)
             startActivity(intent)
     }
     }
