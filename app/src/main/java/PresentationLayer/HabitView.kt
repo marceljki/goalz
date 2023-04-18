@@ -17,6 +17,11 @@ class HabitView : AppCompatActivity(){
         val habitNameTextView: TextView = findViewById(R.id.habitName)
         val habit = intent.getSerializableExtra(IntentNames.HABIT) as Habit
         habitNameTextView.text = habit.name
+        val gobackbtn : Button = findViewById(R.id.goback_habit)
+        gobackbtn.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         val editHabitButton : Button = findViewById(R.id.editHabitButton)
         editHabitButton.setOnClickListener {
             val intent = Intent(this, EditHabitView::class.java)

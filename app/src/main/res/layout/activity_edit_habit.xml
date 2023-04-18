@@ -21,4 +21,11 @@
             app:layout_constraintTop_toBottomOf="@+id/TitleTextView" android:layout_marginTop="90dp"
             android:id="@+id/editHabitList"
     />
+    <Button
+            android:text="@+id/goback"
+            android:layout_width="59dp"
+            android:layout_height="48dp" android:id="@+id/goback_habitedit"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toTopOf="@+id/editHabitList"
+            app:layout_constraintHorizontal_bias="0.049" app:layout_constraintVertical_bias="0.47"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

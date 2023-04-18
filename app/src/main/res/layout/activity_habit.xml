@@ -7,6 +7,14 @@
         android:layout_height="match_parent"
         tools:context="PresentationLayer.HabitView">
 
+    <Button
+            android:text="@+id/goback"
+            android:layout_width="59dp"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045" app:layout_constraintVertical_bias="0.023"
+            android:id="@+id/goback_habit" android:contentDescription="@string/action_settings"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/habitName"
@@ -17,9 +25,10 @@
     <Button
             android:text="Edit Habit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/editHabitButton"
+            android:layout_height="wrap_content"
+            android:id="@+id/editHabitButton"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.023"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.949"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.949" app:layout_constraintStart_toEndOf="@+id/goback_habit"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
